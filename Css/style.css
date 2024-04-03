@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Gilroy";
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+/* #main{
+    width: 100%;
+    height: 100%;
+    margin: 50px 20px 20px 50px;
+    color: yellow;
+    padding: 30px;
+    background-color: black;
+    background-image: url(https://images.unsplash.com/photo-1566438480900-0609be27a4be?q=80&w=1388&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+
+#pix{
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: greenyellow;
+} 
+
+#pixClock{
+    width: 50px;
+    height: 50px;
+    margin: 50px 20px 20px 20px;  /* top right bottom left; 
+} 
+
+#positionAbsolute{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: red;
+}
+
+#insidebox{
+    position: absolute;
+    left: 40%;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+} */
+
+
+#displayFlex{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color: red;
+}
+#box1{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+}
+#box2{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
+#box3{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+}
