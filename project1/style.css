@@ -1,14 +1,41 @@
+@font-face {
+    font-family: GeneralSansMedium;
+    src: url("./GeneralSans-Medium.otf") format("opentype");
+}
+@font-face {
+    font-family: GeneralSansRegular;
+    src: url("./GeneralSans-Regular.otf") format("opentype");
+}
+
 *{
     margin: 0;
     padding: 0;
-    font-family: "Gilroy";
     box-sizing: border-box;
-    font-family: "General Sans Medium";
+    font-family: GeneralSansRegular, sans-serif;
 }
 
 html,body{
     width: 100%;
     height: 100%;
+}
+
+#minicircle{
+    transition: all cubic-bezier(0.165, 0.84, 0.44, 1);
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    z-index: 99999;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.bounding{
+    width: fit-content;
+    overflow: hidden;
+}
+
+.bounding .boundingelem{
+    transform: translateY(100%);
 }
 
 #main{
@@ -40,35 +67,42 @@ html,body{
 }
 
 #heading{
-    margin-top: 70px;
+    margin-top: 100px;
 }
 
 
 #heading h1{
     margin-left: 30px;
     opacity: .6;
-    font-size: 10vw;
+    font-size: 10.5vw;
     text-transform: uppercase;
     line-height: 1;
-    font-weight: 900;
+    font-weight: 950;
 }
 
 #heading #secondh1{
-    margin-left: 120px;
+    margin-left: 170px;
 }
 
 .blocktext{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
     width: fit-content;
 }
 
 .blocktext h5{
+    display: flex;
     text-align: right;
     text-transform: uppercase;
 }
 
 #note{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
     margin-top: 100px;
-    padding-right: 50px;
+    padding-left: 50px;
 }
 
 #note h5{
@@ -117,7 +151,8 @@ html,body{
     background-color: black;
     width: 100%;
     height: 100vh;
-    color: #888;
+    color: white;
+    opacity: 0.9;
 }
 
 .elem{
@@ -155,14 +190,14 @@ html,body{
     align-items: center;
     position: relative;
     display: flex;
-    padding-left: 15vw;
-    padding-top: .1;
-    color: #888;
+    padding-left: 28vw;
+    padding-top: 0;
+    color: white;
     gap: 50px;
 }
 
 #about img{
-    width: 200px;
+    width: 230px;
 }
 
 #textabout h5{
@@ -192,20 +227,20 @@ html,body{
 #subscribe{
     background-color: black;
     padding: 2vw;
-    padding-bottom: 3vw;
+    padding-bottom: 4vw;
     align-items: center;
     text-transform: uppercase;
     color: white;
 }
 
 #subscribe h5{
-    font-size: 1.2vw;
+    font-size: 1.0vw;
     opacity: .7;
 }
 
 #subscribe h3{
     color: white;
-    font-size: 1.2vw;
+    font-size: 1.0vw;
 }
 
 #footer{
@@ -213,14 +248,14 @@ html,body{
     text-transform: uppercase;
     justify-content: space-between;
     display: flex;
-    font-size: 1.7vw;
+    font-size: 1.3vw;
     color: white;
-    padding: 10px 20px;
+    padding: 9px 20px;
 }
 
 #leftfooter{
     display: flex;
-    gap: 3vw;
+    gap: 4vw;
     align-items: center;
 }
 
@@ -229,7 +264,7 @@ html,body{
     align-items: right;
     padding: 2vw 3vw;
     justify-content: center;
-    gap: 20px;  
+    gap: 50px;  
 }
 
 #rightfooter a{
